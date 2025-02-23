@@ -1,0 +1,92 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Admin Portal title */
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* CSV Download button */
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  color: white;
+  background: #16a085;  /* Greenish Teal */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background: #1abc9c;  /* Lighter Teal */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Headers */
+th {
+  background: #3498db;  /* Bright Blue */
+  color: black;  /* Black text for visibility */
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Table Cells */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: black;  /* Black text */
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+  background: #ecf0f1;  /* Light Grey */
+  color: black;  /* Ensure text is black */
+}
+
+/* Hover effect */
+tr:hover {
+  background: #dfe6e9;  /* Soft Blue-Grey */
+  transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
